@@ -1,0 +1,16 @@
+# remap Control-a to Control-x although this does make using Emacs inside screen impossible
+escape ^Xx
+
+# lets turn off message at start
+startup_message off
+
+# setup default windows automagically sshd into local machines
+screen -t xps15  1 ssh 10.10.10.30 -l zander
+screen -t ubuntu-vm  2 ssh 10.10.10.31 -l zander
+screen -t Chillblast  3 bash
+select 0
+
+# I found this rather natty status line on github
+hardstatus alwayslastline
+hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
+
