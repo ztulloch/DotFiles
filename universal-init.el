@@ -166,7 +166,7 @@
   (set-frame-font "Consolas-13"))
  ((find-font (font-spec :name "Inconsolata-13"))
   (set-frame-font "Inconsolata-13"))
- ((find-font (font-spec :name "DegaVu Sans Mono"))
+ ((find-font (font-spec :name "DejaVu Sans Mono"))
   (set-frame-font "DejaVu Sans Mono")))
  ((find-font (font-spec :name "Ubuntu Mono"))
   (set-frame-font "Ubuntu Mono")))
