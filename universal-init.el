@@ -157,15 +157,19 @@
 ; Use the current window for indirect buffer display
 (setq org-indirect-buffer-display 'current-window)
 
-; imenu anywhere
-(require 'imenu-anywhere)
-(global-set-key (kbd "C-.") #'imenu-anywhere)
+; imenu anywhere - not sure what to do with these
+;(require 'imenu-anywhere)
+;(global-set-key (kbd "C-.") #'imenu-anywhere)
 
 (cond
  ((find-font (font-spec :name "Consolas-13"))
   (set-frame-font "Consolas-13"))
  ((find-font (font-spec :name "Inconsolata-13"))
   (set-frame-font "Inconsolata-13"))
+ ((find-font (font-spec :name "DegaVu Sans Mono"))
+  (set-frame-font "DejaVu Sans Mono")))
+ ((find-font (font-spec :name "Ubuntu Mono"))
+  (set-frame-font "Ubuntu Mono")))
  ((find-font (font-spec :name "courier-13"))
   (set-frame-font "courier-13")))
 ; Consolas font is a really good looking monospaced font, ideal for programming
