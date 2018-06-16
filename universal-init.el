@@ -2,7 +2,8 @@
 (setq user-emacs-directory emacs-root)
 
 ; look in cygwin for unix style utilites eg gpg etc
-(add-to-list 'exec-path cygwin-home)
+(when (boundp 'cygwin-home)
+	 (add-to-list 'exec-path cygwin-home))
 ;;; ------------------------------------------------------------------
 ;;; Setup recent mode
 ;;; ------------------------------------------------------------------
@@ -160,7 +161,17 @@
 (require 'imenu-anywhere)
 (global-set-key (kbd "C-.") #'imenu-anywhere)
 
-; Inconsolata font is a good looking monospaced font, ideal for programming
-; which can be downloaded here http://www.levien.com/type/myfonts/inconsolata.html
-(custom-set-faces
- '(default ((t (:family "Inconsolata" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
+(cond
+ ((find-font (font-spec :name "Consolas-13"))
+  (set-frame-font "Consolas-13"))
+ ((find-font (font-spec :name "Inconsolata-13"))
+  (set-frame-font "Inconsolata-13"))
+ ((find-font (font-spec :name "courier-13"))
+  (set-frame-font "courier-13")))
+; Consolas font is a really good looking monospaced font, ideal for programming
+; I think I first got it as part of VisualStudio.
+;(custom-set-faces
+; '(default ((t (:family "Consolas" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
+; if you'd prefer an open source alternative, Inconsolata is a nice looking font
+; it can be downloaded here http://www.levien.com/type/myfonts/inconsolata.html
+;'(default ((t (:family "Inconsolata" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
