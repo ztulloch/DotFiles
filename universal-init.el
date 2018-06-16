@@ -167,9 +167,9 @@
  ((find-font (font-spec :name "Inconsolata-13"))
   (set-frame-font "Inconsolata-13"))
  ((find-font (font-spec :name "DejaVu Sans Mono"))
-  (set-frame-font "DejaVu Sans Mono")))
+  (set-frame-font "DejaVu Sans Mono"))
  ((find-font (font-spec :name "Ubuntu Mono"))
-  (set-frame-font "Ubuntu Mono")))
+  (set-frame-font "Ubuntu Mono"))
  ((find-font (font-spec :name "courier-13"))
   (set-frame-font "courier-13")))
 ; Consolas font is a really good looking monospaced font, ideal for programming
