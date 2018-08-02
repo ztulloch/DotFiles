@@ -19,6 +19,7 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+;; Rust mode
 (straight-use-package 'rust-mode)
 
 (require 'cl)
@@ -37,16 +38,17 @@
 	(add-path "site-lisp")
 	)
 
-; load universal-init - this is stored in emacs-root and contains the meat of the init stuff
+;; load universal-init - this is stored in emacs-root and contains the meat of the init stuff
 (load-library "universal-init.el")
 
 ; set a browser specific for emacs
-(setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "c:/Program files/Firefox/firefox.exe");
+;(setq browse-url-browser-function 'browse-url-generic
+;      browse-url-generic-program "c:/Program files/Firefox/firefox.exe");
 
 
 (global-set-key "\M-SPC" 'set-mark)
 
+; settings for console emacs
 (set-face-foreground 'font-lock-comment-face "light pink")
 (set-face-foreground 'font-lock-comment-delimiter-face "light pink")
 (custom-set-variables
