@@ -1,3 +1,4 @@
+#!/bin/bash
 cp dot.emacs.lin ~/.emacs 
 mkdir ~/EmacsRoot
 cp universal-init.el ~/EmacsRoot

@@ -1,0 +1,7 @@
+if [ -f ~/Dropbox ]
+	export TIMERDIR=~/Dropbox/Documents/timerdir
+fi
+
+if [ -f ~/.bash_kubectl ]; then
+    . ~/.bash_kubectl
+fi
