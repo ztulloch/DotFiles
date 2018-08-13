@@ -25,7 +25,7 @@
 (require 'cl)
 ; machine specific path and environment variables
 ; Emacs root is a synchronised folder where site-lisp and backup files are stored
-(defvar emacs-root "/home/zander/EmacsRoot/")
+(defvar emacs-root "/home/zander/.emacs.d/")
 ; I'm using the excellent Orgzly on Android and the relevant files are shared through dropbox
 (defvar org-root "~/Dropbox/Documents/Orgzly/")
 ; cygwin home for cygwin utilities
