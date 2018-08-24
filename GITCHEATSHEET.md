@@ -6,11 +6,10 @@ Clone a repository
 git clone https://github.com/user/repository
 ```
 
-Clone repository after ssh access setup
+Clone repository after ssh access has been setup
 ```
 git clone git@github.com:user/repository.git
 ```
-
 Check git status
 ```
 git status
@@ -33,7 +32,7 @@ git add -u
 
 Commit changes to the repository:
 ```
-git commit -m "Added 3 level paths and added a test. Fixed -d flag."
+git commit -m "Commit message"
 ```
 
 Push changes to git server
@@ -72,4 +71,39 @@ Merge branch back into master
 git checkout master
 git merge branch
 git push
+```
+Create branch, push to branch
+```
+git checkout -b branch
+git push --set-upstream origin branch
+```
+Setting up git public key - saves setting username and password every commit.
+```
+ssh-keygen -t rsa -b 4096 -C "username@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+```
+Paste this into git settings on github.com
+```
+cat ~/.ssh/id_rsa.pub 
+```
+Finally, test if key works
+```
+ssh -T git@github.com
+```
+Stashing modified files for later
+'''
+git stah save "Meaningful message"
+'''
+List stashed files. At this point that "Meaningful message" becomes important.
+```
+git stash list
+```
+Unstash changed files
+```
+git stash apply / pop
+```
+Get rid of stashed files
+```
+git stash clear
 ```
