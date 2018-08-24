@@ -45,3 +45,31 @@ Reload file from git, undoing all changes.
 ```
 git checkout -- filename
 ```
+
+Create new branch and start working on it
+```
+git checkout -b newbranch
+```
+Change to branch.
+```
+git checkout branch
+```
+Workflow. Create a new branch, rename it, then check it in.
+Create a new branch. Rename it. Add modified files. Commit changes. Push changes.
+```
+git checkout -b newbranch
+git branch -m renamedbranch
+git add -u
+git commit -m "commit message"
+git push --set-upstream origin renamedbranch
+```
+Pull remote changes in a forked repository.
+```
+git pull upstream master
+```
+Merge branch back into master
+```
+git checkout master
+git merge branch
+git push
+```
