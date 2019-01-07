@@ -1,6 +1,6 @@
 Git Cheatsheet
 ==============
-
+# H3
 Clone a repository
 ```
 git clone https://github.com/user/repository
@@ -77,6 +77,7 @@ Create branch, push to branch
 git checkout -b branch
 git push --set-upstream origin branch
 ```
+### H3
 Setting up git public key - saves setting username and password every commit.
 ```
 ssh-keygen -t rsa -b 4096 -C "username@gmail.com"
