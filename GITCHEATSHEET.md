@@ -1,25 +1,24 @@
 Git Cheatsheet
 ==============
-# H3
+#### Cloning
 Clone a repository
 ```
 git clone https://github.com/user/repository
 ```
-
 Clone repository after ssh access has been setup
 ```
 git clone git@github.com:user/repository.git
 ```
+#### Status
 Check git status
 ```
 git status
 ```
-
 Check branch status
 ```
 git branch -va
 ```
-
+#### Pushing Changes
 Add files to be updated
 ```
 git add filename
@@ -77,7 +76,7 @@ Create branch, push to branch
 git checkout -b branch
 git push --set-upstream origin branch
 ```
-### H3
+### Public Key
 Setting up git public key - saves setting username and password every commit.
 ```
 ssh-keygen -t rsa -b 4096 -C "username@gmail.com"
