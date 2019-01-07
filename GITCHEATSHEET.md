@@ -93,7 +93,7 @@ ssh -T git@github.com
 ```
 Stashing modified files for later
 '''
-git stah save "Meaningful message"
+git stash save "Meaningful message"
 '''
 List stashed files. At this point that "Meaningful message" becomes important.
 ```
