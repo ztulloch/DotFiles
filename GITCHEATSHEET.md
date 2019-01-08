@@ -1,6 +1,6 @@
 Git Cheatsheet
 ==============
-#### Cloning
+### Cloning
 Clone a repository
 ```
 git clone https://github.com/user/repository
@@ -9,7 +9,7 @@ Clone repository after ssh access has been setup
 ```
 git clone git@github.com:user/repository.git
 ```
-#### Status
+### Status
 Check git status
 ```
 git status
@@ -18,7 +18,7 @@ Check branch status
 ```
 git branch -va
 ```
-#### Pushing Changes
+### Pushing Changes
 Add files to be updated
 ```
 git add filename
@@ -43,7 +43,7 @@ Reload file from git, undoing all changes.
 ```
 git checkout -- filename
 ```
-
+### Branches
 Create new branch and start working on it
 ```
 git checkout -b newbranch
@@ -87,10 +87,11 @@ Paste this into git settings on github.com
 ```
 cat ~/.ssh/id_rsa.pub 
 ```
-Finally, test if key works
+Test if key works
 ```
 ssh -T git@github.com
 ```
+### Stashing 
 Stashing modified files for later
 '''
 git stash save "Meaningful message"
