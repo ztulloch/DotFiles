@@ -5,25 +5,33 @@ Move current config files .emacs and .emacs.d
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 Start emacs and select evil mode.
+## Basics
+* **_i_** - Insert at point
+* **_o_** - Insert on newline
+* **_A_** - Append at end of line
+* **_u_** - Undo
+* **_Ctrl-R_** - Redo
+* **_._** Repeat last insertion
+* **_h j k l_** - move around inside buffer
 ## General
-* SPACE f s - *save buffer*
-* SPACE f S or :wa **save all buffers**
-* SPACE f e d **_Open .spacemacs file_**
-* SPACE f C d / u - convert unix / dos CR LFs
-* **SPACE f E** Open file with elevated privileges
+* **_SPACE f s_** - save buffer
+* **_SPACE f S_** or **_:wa_** save all buffers
+* **_SPACE f e d_** Open .spacemacs file
+* **_SPACE f C d / u_** - convert unix / dos CR LFs
+* **_SPACE f E_** - Open file with elevated privileges
 * **_SPACE f t_** - toggle file tree
-* SPACE T n - cycle theme
-* SPACE t E e - switch between holy / evil mode
+* **_SPACE T n_** - cycle theme
+* **_SPACE t E e_** - switch between holy / evil mode
 ## Windows
-* SPACE 1-9 - jump to window
-* SPACE TAB - change to previous buffer in current window
-* SPACE w / or - - split horizontally or vertically
+* **_SPACE 1-9_** - jump to window
+* **_SPACE TAB_** - change to previous buffer in current window
+* **_SPACE w / or -_** - split horizontally or vertically
 ## Org Mode
-* SPACE a o a - org agenda mode
-* SPACE m a a - agenda command
-* SPACE a o p - projectile capture
-* SPACE p o - goto project file
-* SPACE m S lkjh - move subtree around
+* **_SPACE a o a_** - org agenda mode
+* **_SPACE m a a_** - agenda command
+* **_SPACE a o p_** - projectile capture
+* **_SPACE p o_** - goto project file
+* **_SPACE m S lkjh_** - move subtree around
 ## Agenda View
-* t - mark as done
-* ENTER - jump to file
+* **_t_** - mark as done
+* **_ENTER_** - jump to file
