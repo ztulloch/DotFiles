@@ -11,9 +11,10 @@ tmux a -t # - attach to tmux session
 **_CTRL SHIFT t_** Undo close tab
 **_CTRL l_** Select address bar
 **_CTRL t_** new tab
-**__**
-**__**
-**__**
-**__**
-**__**
+# Awesome WM
+**_SUPER S_** Help reference
+**_SUPER CTRL j/k_** Switch to window on other DISPLAY
+**_ALT j/k_** switch window on same screen
+**_SUPER 1-X_** jump to desktop
+**_SUPER LEFT/RIGHT_** switch to next virtual desktop
 **__**

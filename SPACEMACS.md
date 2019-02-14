@@ -24,10 +24,12 @@ Start emacs and select evil mode.
 * **_$_** - jump to end of line
 * **_J_** - Join next line to current line
 * **_xp_** transpose current character with next one
+* **_Xp_** transpose current character with previous one
 * **_gg_** goto start of buffer
 * **_G_** goto end of buffer
 * **_yy_** yank line
 ## General Operation
+* **_SPACE q q_** - quit
 * **_SPACE f s_** - save buffer
 * **_SPACE f S_** or **_:wa_** save all buffers
 * **_SPACE f e d_** Open .spacemacs file
@@ -39,6 +41,8 @@ Start emacs and select evil mode.
 * **_SPACE s c_** - clear search highlight
 * **_SPACE t p_** toggle smart parenthesis
 * **_SPACE v s (_** or **_ysiw(_** surround current word with parenthesis
+* **_SPACE b b_** - buffer menu
+* **_SPACE r y_** - show selectable kill ring
 ## Windows
 * **_SPACE 1-9_** - jump to window
 * **_SPACE TAB_** - change to previous buffer in current window
